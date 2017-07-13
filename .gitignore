@@ -1,0 +1,6 @@
+.project
+node_modules
+launchConfigurations/
+*.DS_STORE
+*.log
+vcap-local.json
