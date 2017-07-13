@@ -1,0 +1,239 @@
+{
+  "columns": [
+    {
+      "type": "numeric",
+      "key": "cost",
+      "full_name": "Cost",
+      "range": {
+        "low": 0,
+        "high": 1000
+      },
+      "format": "number:0 | taPrefix:'$'",
+      "description": "Cost of the policy",
+      "goal": "min",
+      "is_objective": true
+    },
+    {
+      "type": "numeric",
+      "key": "levelCare",
+      "full_name": "Level of Care",
+      "range": {
+        "low": 1,
+        "high": 5
+      },
+      "format": "number:0",
+      "description": "Level of care offered by the policy",
+      "goal": "max",
+      "is_objective": true
+    },
+    {
+      "type": "numeric",
+      "key": "amount",
+      "full_name": "Coverage Amount",
+      "range": {
+        "low": 0,
+        "high": 10000
+      },
+      "format": "number:0 | taPrefix:'$'",
+      "description": "Total amount covered by the policy",
+      "goal": "max",
+      "is_objective": true
+    },
+    {
+      "type": "numeric",
+      "key": "refund",
+      "full_name": "Refunded Percentage",
+      "range": {
+        "low": 20,
+        "high": 100
+      },
+      "format": "number:0 | taSuffix:'%'",
+      "description": "Percentage of policy cost refunded upon cancellation",
+      "goal": "max",
+      "is_objective": true
+    },
+    {
+      "type": "numeric",
+      "key": "review",
+      "full_name": "Average Review",
+      "range": {
+        "low": 2,
+        "high": 5
+      },
+      "format": "number:0 | taSuffix:' stars'",
+      "description": "Average customer review for the policy",
+      "goal": "max",
+      "is_objective": true
+    }
+  ],
+  "records": [
+    {
+      "name": "Essential",
+      "desc": "Everything you need, none of the frills",
+      "cancelRefund": 20,
+      "levelCare": 3,
+      "review": 4,
+      "cost": 463,
+      "coverage": 4630,
+      "id": "fc721ecc418397714e084cf3c9116318"
+    },
+    {
+      "name": "Flight of Fancy",
+      "desc": "For the indecisive traveler unsure of their travel plans",
+      "cancelRefund": 100,
+      "levelCare": 2,
+      "review": 3,
+      "cost": 393,
+      "coverage": 3144,
+      "id": "bac9c5521d53275a085dbf1931b35eec"
+    },
+    {
+      "name": "Premium",
+      "desc": "Our package for the risk-averse traveler",
+      "cancelRefund": 80,
+      "levelCare": 5,
+      "review": 4,
+      "cost": 809,
+      "coverage": 5663,
+      "id": "fc721ecc418397714e084cf3c9115bc1"
+    },
+    {
+      "name": "Standard",
+      "desc": "Not too much. Not too little. Just right",
+      "cancelRefund": 50,
+      "levelCare": 3,
+      "review": 5,
+      "cost": 777,
+      "coverage": 6216,
+      "id": "626cf57c5520ecd2d4d8caed634fc961"
+    },
+    {
+      "name": "Standard Plus",
+      "desc": "Just the right amount of coverage and a cherry on top",
+      "cancelRefund": 70,
+      "levelCare": 3,
+      "review": 4,
+      "cost": 907,
+      "coverage": 9070,
+      "id": "0ec17005a35cedf72dd54c6806bf6b14"
+    }
+  ],
+  "map": {
+    "nodes": [
+      {
+        "coordinates": {
+          "x": 3.999626984596152,
+          "y": -0.03862541229425015
+        },
+        "solution_refs": [
+          "bac9c5521d53275a085dbf1931b35eec"
+        ]
+      },
+      {
+        "coordinates": {
+          "x": 2.033450588278469,
+          "y": 1.731727766753142
+        },
+        "solution_refs": [
+          "fc721ecc418397714e084cf3c9116318"
+        ]
+      },
+      {
+        "coordinates": {
+          "x": 3.066714668855013,
+          "y": 3.4441428273591588
+        },
+        "solution_refs": [
+          "fc721ecc418397714e084cf3c9115bc1"
+        ]
+      },
+      {
+        "coordinates": {
+          "x": 5.066341653451166,
+          "y": 3.4055174150649083
+        },
+        "solution_refs": [
+          "0ec17005a35cedf72dd54c6806bf6b14"
+        ]
+      },
+      {
+        "coordinates": {
+          "x": 4.099978749431558,
+          "y": 5.1565578879651754
+        },
+        "solution_refs": [
+          "626cf57c5520ecd2d4d8caed634fc961"
+        ]
+      }
+    ],
+    "anchors": [
+      {
+        "name": "cost",
+        "position": {
+          "x": 1.4063479823075893,
+          "y": -0.10575413000766076
+        }
+      },
+      {
+        "name": "levelCare",
+        "position": {
+          "x": -0.19661711961606532,
+          "y": 4.82766517484922
+        }
+      },
+      {
+        "name": "review",
+        "position": {
+          "x": 4,
+          "y": 7.876685986005652
+        }
+      },
+      {
+        "name": "amount",
+        "position": {
+          "x": 8.196617119616064,
+          "y": 4.82766517484922
+        }
+      },
+      {
+        "name": "refund",
+        "position": {
+          "x": 6.59365201769241,
+          "y": -0.10575413000766076
+        }
+      }
+    ],
+    "version": "APIV1-ANN",
+    "config": {
+      "params": {
+        "rInit": 3.6113259337811097,
+        "rFinish": 1,
+        "seed": 20001,
+        "rAnchor": 1.3333333333333333,
+        "alpha_init": 0.75,
+        "map_size": 45,
+        "training_period": 100,
+        "anchor_epoch": 1
+      },
+      "drivers": {
+        "r_fin": 1,
+        "r_init": 0.9,
+        "r_anchor_init": 1.2,
+        "training_length": 100,
+        "max_map_size": 200,
+        "alpha_init": 0.75,
+        "training_anchors": 0.25,
+        "data_multiplier": 9
+      }
+    },
+    "metrics": {
+      "mqe": "NaN",
+      "tau": "NaN",
+      "somers": "NaN",
+      "kappa": 0.72,
+      "kappa_delta": "NaN",
+      "weighted_kappa": "NaN",
+      "final_kappa": 0.72
+    }
+  }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Policy Catalog API</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<table>
+		<tr>
+			<td style='width: 30%;'><img src='images/newapp-icon.png'>
+			</td>
+			<td>
+				<h1 id = "message">Node.js Policy Catalog API</h1>
+				<p class='description'>
+				GET <a href="/policies">/policies</a> to see all the policies.
+				<br><br>
+				GET /policies/{id} retrieves a policy from the DB using an ID.
+				<br><br>
+				GET /db/{option} Create (and populate) or delete the DB. Option is either 'create' or 'delete.'
+				<br><br>
+				GET /fib Computes the Fibonacci sequence of 20.
+				<br><br>
+				PUT /policies/{id} updates a policy using an ID.
+				<br><br>
+				DELETE /policies/{id} removes a policy from the DB using an ID.
+				<br><br>
+				POST /policies creates a new policy. <br> &nbsp;&nbsp;Ex: {name:'Basic',desc:'A low-cost package for the penny-pincher', baseCost:300,perAddTraveler:20,minDays: 0,perAddDay: 5,levelCare: 2,amount: 3000}
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

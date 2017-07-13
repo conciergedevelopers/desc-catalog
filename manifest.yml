@@ -1,0 +1,7 @@
+---
+applications:
+- name: desc-catalog
+  host: desc-catalog
+  memory: 128M
+  services:
+  - desc-clinical-db

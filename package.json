@@ -1,0 +1,68 @@
+{
+  "name": "desc-catalog",
+  "version": "1.0.0",
+  "description": "A Node.js app for interacting with clinical records in a Cloudant DB.",
+  "private": false,
+  "keywords": [
+    "bluemix",
+    "microservices",
+    "watson",
+    "cloudant",
+    "nosql"
+  ],
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "1.12.x",
+    "cf-deployment-tracker-client": "*",
+    "cfenv": "1.0.x",
+    "cloudant": "1.6.x",
+    "consolidate": "0.11.x",
+    "cors": "2.5.x",
+    "express": "3.20.x",
+    "watson-developer-cloud": "1.9.x"
+  },
+  "devDependencies": {
+    "async": "^1.5.2",
+    "chai": "^3.4.1",
+    "chai-as-promised": "latest",
+    "colors": "latest",
+    "dotenv": "^2.0.0",
+    "grunt": "^0.4.5",
+    "grunt-concurrent": "latest",
+    "grunt-contrib-clean": "^0.7.0",
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-env": "^0.4.4",
+    "grunt-istanbul": "^0.6.1",
+    "grunt-mocha-test": "^0.12.7",
+    "grunt-simple-mocha": "latest",
+    "lodash": "latest",
+    "mocha": "^2.3.3",
+    "request": "^2.67.0",
+    "rewire": "^2.5.1",
+    "sinon": "^1.17.2",
+    "spec-xunit-file": "0.0.1-3",
+    "wd": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "xxxxxxxxxxxxx"
+  },
+  "bugs": {
+    "url": "xxxxxxxxxxxxx/issues"
+  },
+  "engines": {
+    "node": "4.4.x"
+  },
+  "author": "CCD Ltd",
+  "contributors": [
+    {
+      "name": "pizza pie",
+      "email": "pizza@email.com"
+    }
+  ],
+  "license": "Apache-2.0"
+}

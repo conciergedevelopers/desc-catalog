@@ -1,0 +1,7 @@
+---
+applications:
+- name: dev-insurance-catalog
+  host: dev-insurance-catalog
+  memory: 128M
+  services:
+  - dev-desc-clinical-db
